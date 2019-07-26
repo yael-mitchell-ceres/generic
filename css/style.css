@@ -51,15 +51,15 @@ article {
     background-color: #000;
     color: #fff;
     grid-area: 1 / 1 / 2 / -1;
-    float: left;
 }
 .nav ul {
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
+    height: 100%;
 }
 .nav li {
-    display: inline;
+    display: inline-block;
+    margin-right: 1em;
+    height: 100%;
 }
 .nav li:hover {
     background-color: #333;
