@@ -51,15 +51,22 @@ article {
     background-color: #000;
     color: #fff;
     grid-area: 1 / 1 / 2 / -1;
+    padding-top: 0px;
 }
 .nav ul {
     list-style: none;
     height: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0;
 }
 .nav li {
-    display: inline-block;
-    margin-right: 1em;
+    display: flex;
+    margin: auto 1em auto 0px;
     height: 100%;
+    cursor: pointer;
 }
 .nav li:hover {
     background-color: #333;
@@ -67,8 +74,13 @@ article {
 .nav a {
     text-decoration: none;
     color: white;
-
+    margin: auto 0;
 }
+
+.nav a:hover {
+    background-color: #333;
+}
+
 .menu {
     background-color: #f0f0f0;
     color: #000;
