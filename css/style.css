@@ -31,28 +31,37 @@ main, html, body {
 }
 
 /* Page Content */
+
 main {
     display: grid;
     grid-template-columns: auto 1200px auto;
 
 }
+
 article {
     grid-area: 1 / 2 / -1 / 3;
     display: grid;
-    background-color: red;
+    background-color: #fff;
     grid-template-rows: 3em auto 100px 100px auto auto auto;
     grid-template-columns: 17% auto 2fr;
 }
+
+/* Box for aligning items */
+
 .box{
     border: 2px solid #000;
 
 }
+
+/* Nav section */
+
 .nav {
     background-color: #000;
     color: #fff;
     grid-area: 1 / 1 / 2 / -1;
     padding-top: 0px;
 }
+
 .nav ul {
     list-style: none;
     height: 100%;
@@ -62,15 +71,19 @@ article {
     justify-content: flex-start;
     padding-left: 0;
 }
+
 .nav li {
     display: flex;
     margin: auto 1em auto 0px;
     height: 100%;
     cursor: pointer;
+    padding: .5em;
 }
+
 .nav li:hover {
     background-color: #333;
 }
+
 .nav a {
     text-decoration: none;
     color: white;
@@ -81,55 +94,128 @@ article {
     background-color: #333;
 }
 
+/* Menu section */
+
 .menu {
     background-color: #f0f0f0;
     color: #000;
     grid-area: 2 / 1 / -1 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
 }
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+/* Heading section */
+
 .heading {
     background-color: #fff;
     color: #000;
     grid-area: 2 / 2 / 5 / 5;
     display: grid;
     grid-template-rows: auto auto auto;
+    padding: 1.8em .5em .5em .5em;
 }
+
+.heading-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 4em;
+}
+
+.heading-text {
+    padding-right: 1em;
+    line-height: 1.4em;
+}
+
 .heading h1 {
     color: #419388;
 }
-.heading-ads{
 
-}
-.adsBox {
-    border: 1px solid grey;
+.heading-ads {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.heading-adsBox {
+    border: 2px solid grey;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .3em 0 .3em 0;
+    flex-grow: 1;
+}
+
+.heading-adsBox-bottom {
+    flex-grow: 2;
+}
+
+.heading-adsBox p {
+    text-align: center;
+}
+
+/* Pagination Section */
+
 .pagination {
     background-color: #fff;
     grid-area: 5 / 2 / 6 / -1;
 }
+
+.pagination ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .pagination li {
     display: inline;
-
+    padding: 1em;
 }
+
+.pagination li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer Section */
+
 .footer{
+    height: 100px;
     background-color: #666;
     color: #fff;
     grid-area: 6 / 2 / 7 / -1;
+    display: flex;
+    padding: .5em;
+    align-content: center;
 }
+
+.footer h3 {
+    margin: auto 0;
+    font-weight: 400;
+}
+
+/* Credit section */
+
 .credits {
     background-color: #333;
     color: #fff;
     grid-area: 7 / 2 / 8 / -1;
+    padding: .2em;
 }
+
 .credits a {
     color: white;
 }
-.heading-grid {
-     display: grid;
-     grid-template-columns: auto auto;
-}
-/*
-.heading-text, heading-ads {
-     height: 100%;
-
-}*/
