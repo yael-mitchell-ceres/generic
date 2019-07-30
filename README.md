@@ -1,7 +1,4 @@
-# generic
-Friday Team Assignment 
-
-[//]: <> (KNOCKED IT OUT OF THE PARK!!!)
-
-[//]: <> (Awesome job Yael taking lead on the (7/26/2019) Friday project. Great nesting test approach with boiler plate code (w / bborder, et c.) 
-[//]: <> (OVERALL:: the projected timeframe stated was different that finished product. Overall timing was still great!) 
+##Peer Programming Project
+Authors: Yael Brown, Mitchell Arnold
+Date: 7.26.19
+Demostration of CSS Grid and Flexbox to recreate a frontend layout.
